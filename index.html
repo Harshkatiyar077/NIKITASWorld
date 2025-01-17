@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Cabin+Sketch:wght@400;700&family=DynaPuff:wght@400..700&family=Itim&family=Joti+One&family=Sniglet:wght@400;800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i");
+
+    </style>
+    <title>Welcome to Nikky's World</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a id="logo" href="#">Nikky's world</a></li>
+        <li class="hideOnMobile">
+          <button class="btn"><a id="bt1" href="#">Home</a></button>
+        </li>
+        <li class="hideOnMobile">
+          <button class="btn"><a href="#">My Life</a></button>
+        </li>
+        <li class="hideOnMobile">
+          <button class="btn"><a href="#">Events</a></button>
+        </li>
+        <li class="hideOnMobile">
+          <button class="btn"><a href="#">ContactUS</a></button>
+        </li>
+        <li id="sidebaricon" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="27px"
+              viewBox="0 -960 960 960"
+              width="27px"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="idsidebar">
+      <ul id="idul">
+        <li onclick="closeSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="27px"
+              viewBox="0 -960 960 960"
+              width="27px"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <button class="btn"><a href="#">Nikky's world</a></button>
+        </li>
+        <li>
+          <button class="btn"><a href="#">Home</a></button>
+        </li>
+        <li>
+          <button class="btn"><a href="#">My Life</a></button>
+        </li>
+        <li>
+          <button class="btn"><a href="#">Events</a></button>
+        </li>
+        <li>
+          <button class="btn"><a href="#">ContactUS</a></button>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".idsidebar");
+        idsidebar.style.display = "flex";
+      }
+      function closeSidebar() {
+        const sidebar = document.querySelector(".idSidebar");
+        idsidebar.style.display = "none";
+      }
+    </script>
+    <div id="idallcontent">
+      <!-- Home or header -->
+
+      <section id="home">
+        <div>
+          <h1>Welcome to Nikky's World</h1>
+          <p>
+            Space where moments and memories come to life. Here, reflections,
+            personal growth, and life’s meaningful experiences are shared. It’s
+            a journey through the small things that make life extraordinary.
+          </p>
+        </div>
+      </section>
+
+      <!-- its my life section OR main content -->
+
+      <section id="imylifeitems">
+        <h1>My Life</h1>
+        <div class="mylife">
+          <div class="cmylifeitems">
+            <img width="100%" src="starringSky.jpeg" alt="Peace" />
+            <h2>In search of Peace in the Simple Moments</h2>
+            <p>
+              There’s something undeniably calming about standing beneath the
+              open sky, lost in thought. These quiet moments offer a sense of
+              peace, a chance to reflect on the vastness of the world and the
+              infinite possibilities that lie ahead.
+            </p>
+          </div>
+          <div class="cmylifeitems , ctextstyle3">
+            <img width="100%" src="naturalsun.jpeg" alt="freedom in sunset" />
+            <h2>A Moment of Freedom Beneath the Sunset</h2>
+            <p>
+              Watching the sunset with arms outstretched, feeling the warmth
+              embrace the soul, is a moment of pure freedom. The beauty of
+              nature offers a sense of grounding, a reminder that there’s always
+              more to discover, and peace can be found in the simplest things.
+            </p>
+          </div>
+          <div class="cmylifeitems">
+            <img width="100%" src="spiritual.jpeg" alt="jai mahakal" />
+            <h2>Finding Spiritual Peace Through Reflection</h2>
+            <p>
+              Spiritual reflection is a pathway to inner peace. In the stillness
+              of these moments, distractions fade away, and clarity emerges.
+              It’s in these quiet times that we reconnect with our true selves,
+              finding strength and guidance for the path ahead.
+            </p>
+          </div>
+        </div>
+
+        <div id="nature" class="mylife">
+          <div id="nature1" class="cmylifeitems">
+            <img id="n1" width="100%" src="nature.jpg" alt="Nature's beauty" />
+            <h2>A Quiet Escape into Nature</h2>
+            <p>
+              In the embrace of nature, I find an unparalleled sense of peace.
+              The rustling leaves, the gentle flow of rivers, and the soft
+              whispers of the wind create a harmonious atmosphere that calms my
+              mind. Surrounded by beauty, I am reminded to pause, breathe
+              deeply, and let go of stress. Nature offers me a space to
+              reconnect, restore balance, and embrace tranquility, allowing my
+              soul to heal and find clarity.
+            </p>
+          </div>
+          <div id="nature2" class="cmylifeitems , ctextstyle3">
+            <img id="n2" width="100%" src="Thebus.jpeg" alt="bus adventure" />
+            <h2>The Excitement of New Adventures and Discoveries</h2>
+            <p>
+              There’s always something thrilling about stepping into the
+              unknown. Whether it’s embarking on a new adventure, starting a
+              fresh chapter, or simply exploring new places, the excitement of
+              discovery keeps life feeling full of possibility and wonder.
+            </p>
+          </div>
+        </div>
+
+        <div id="nature" class="mylife">
+          <div id="nature3" class="cmylifeitems1">
+            <img
+              id="n1"
+              width="100%"
+              src="nightout.jpeg"
+              alt="sometime explore outside"
+            />
+            <h2>Finding Beauty in the Ordinary</h2>
+            <p>
+              Sometimes, the most beautiful moments are the ones that seem the
+              most ordinary. A quiet walk, a heartfelt conversation, or a simple
+              day spent with loved ones—these moments are the ones that add
+              meaning to life, reminding us that beauty is everywhere if we take
+              the time to notice.
+            </p>
+          </div>
+          <div id="nature4" class="cmylifeitems1 , ctextstyle3">
+            <img
+              id="n2"
+              class="cimgabs"
+              width="100%"
+              src="stars1.jpg"
+              alt="mysterious stars"
+            />
+            <h2>A Beacon of Peace and Serenity</h2>
+            <p>
+              The stars bring me a sense of serenity beyond words. Their quiet
+              brilliance offers comfort, but it’s not just about silence—it's
+              the stillness that envelops me, a feeling of being at peace with
+              everything. Their steady glow reminds me to embrace calmness, find
+              clarity, and appreciate the beauty in simplicity.
+            </p>
+          </div>
+        </div>
+
+        <div class="mylife">
+          <div class="cmylifeitems , ctextstyle3">
+            <img width="100%" src="schooldays.jpeg" alt="Schooldays" />
+            <h2>Cherishing the Innocence of Youth and New Beginnings</h2>
+            <p>
+              There’s a special kind of excitement that comes with new
+              beginnings. From the first day of school to the friendships we
+              make along the way, these early experiences lay the foundation for
+              everything that follows, shaping our journey as we grow.
+            </p>
+          </div>
+          <div id="flowerradius" class="cmylifeitems">
+            <img width="100%" src="pinkflower2.jpg" alt="The prettiest" />
+            <h2>Why I love the flowers most!</h2>
+            <p>
+              Flowers captivate me with their vibrant hues, delicate forms, and
+              enchanting fragrances. They symbolize love, hope, and renewal,
+              spreading joy and peace. Their natural beauty inspires me,
+              brightens my soul, and enriches life’s moments.
+            </p>
+          </div>
+          <div class="cmylifeitems">
+            <img width="100%" src="diffoutfit.jpeg" alt="Let me Be BOLD" />
+            <h2>Embracing Change and Expressing Boldness</h2>
+            <p>
+              True self-expression comes from embracing change and stepping
+              outside comfort zones. Whether it's a casual look or a bolder
+              outfit, there’s something freeing about embracing who we are,
+              unapologetically, and letting that authenticity shine through.
+            </p>
+          </div>
+        </div>
+        <div class="friendshiphead">
+          <h2>Meaning of friendship in my dictionary . . .</h2>
+        </div>
+        <div id="closeones" class="mylife">
+          <div id="nature5" class="cmylifeitems1 , ctextstyle3">
+            <img
+              id="n1"
+              width="100%"
+              src="Thefriendship1.jpeg"
+              alt="Close to my heart"
+            />
+            <h2>The Bond of Friendship That Lights Up Life</h2>
+            <p>
+              Friendship is one of life’s greatest gifts. The laughter, the
+              adventures, and the support shared with friends create unbreakable
+              bonds that bring light to even the darkest days. No matter where
+              life leads, the power of friendship remains a constant source of
+              strength.
+            </p>
+          </div>
+          <!-- <div id="nature6" class="cmylifeitems1"> <img id="n2" class="cimgabs" width="100%" src="stars1.jpg" alt="mysterious stars"> </div> -->
+        </div>
+
+        <div id="mountain_clouds" class="mylife">
+          <div id="nature6" class="cmylifeitems1">
+            <img
+              id="n1"
+              width="100%"
+              src="mountain.jpg"
+              alt="place to hide to stay to cry"
+            />
+            <h2>Mystical Horizons: Nature’s Tranquil Melody</h2>
+            <p>
+              Amid the fog-draped mountains, nature unfolds a breathtaking
+              masterpiece. The mist dances softly, cloaking the peaks in
+              mystery, while vibrant plants thrive in quiet resilience. This
+              harmonious blend of serenity and life offers a profound sense of
+              peace and renewal. Each element, from the whispering breeze to the
+              emerald foliage, inspires us to pause, reflect, and embrace
+              nature’s gentle beauty. In this tranquil haven, we find not only
+              solace but also a renewed spirit to face life’s journey.
+            </p>
+          </div>
+          <div id="nature7" class="cmylifeitems , ctextstyle3">
+            <img width="100%" src="specialfunctions.jpeg" alt="The prettiest" />
+            <h2>The Joy of Celebrating Special Moments</h2>
+            <p>
+              Special moments have a way of filling the air with joy and
+              excitement. Whether it’s a milestone event or a celebration with
+              loved ones, these moments are about more than just the
+              occasion—they’re about shared happiness and the memories that last
+              long after.
+            </p>
+          </div>
+          <!-- <div id="nature8" class="cmylifeitems1"> <img id="n2" class="cimgabs" width="100%" src="clouds.jpg" alt="The free fogg with no desires"> </div> -->
+        </div>
+
+        <div id="mountain_clouds2" class="mylife">
+          <div id="nature9" class="cmylifeitems1">
+            <img
+              id="n1"
+              width="70%"
+              src="sunrise3.jpg"
+              alt="beginnings of the day"
+            />
+            <section>
+              <h2>The Morning Light: My Daily Source of Positivity</h2>
+              <p>
+                Every morning, the first light of day becomes my source of
+                positivity. Its gentle glow reminds me that each new day brings
+                fresh opportunities. I embrace the warmth as a moment of
+                renewal, letting go of worries and welcoming optimism. It fills
+                me with calm and gratitude, empowering me to face the day with
+                clarity and peace.
+              </p>
+            </section>
+          </div>
+          <div id="nature10" class="cmylifeitems1">
+            <img
+              id="n2"
+              class="cimgabs"
+              width="100%%"
+              src="monument.jpeg"
+              alt="scretching the past"
+            />
+            <h2>Reflecting on the Past, Embracing the Present</h2>
+            <p>
+              Exploring such ancient monuments, it’s easy to feel a deep
+              connection to the past. These moments remind us to appreciate the
+              present while recognizing how far we’ve come, acknowledging the
+              stories that have shaped who we are today.
+            </p>
+          </div>
+        </div>
+
+
+              <!-- See some Upcoming events or aspirations will mention what is likely to achieve in future- trips destinations etc  -->
+
+
+
+        <div id="events">
+            <h1>Here are some special todo's in my bucket list</h1>
+        
+          <ol class="gradient-list">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Aenean tincidunt elit at ipsum cursus, vitae interdum nulla suscipit.</li>
+            <li>Curabitur in orci vel risus facilisis accumsan.</li>
+            <li>Morbi eleifend tortor lacinia sapien sagittis, quis pellentesque felis egestas.</li>
+            <li>Aenean viverra dui quis leo lacinia fringilla.</li>
+            <li>Sed varius lectus ac condimentum egestas.</li>
+            <!-- <li>Maecenas faucibus lorem nec lorem posuere, a rhoncus velit porttitor.</li> -->
+             
+          </ol>
+        </div>
+      </section>
+
+
+       
+    </div>
+    <!-- footer or contact details -->
+
+    <footer>
+      <h2>Hey I'm footer, Contact details</h2>
+    </footer>
+  </body>
+</html>
