@@ -12,7 +12,7 @@ html{
 
 nav {
   width: 100vw;
-  height: 55px;
+  height: 6vh;
   border: 1px solid black;
   padding: 0%;
   /* background: black; */
@@ -191,8 +191,7 @@ nav> ul>li a:active{
 
 /* Lets design the home or main header */
 
-#home:before {
-}
+ 
 
 /* design the content files */
 
@@ -218,9 +217,9 @@ body {
   background-color: #69804d;
 }
 
-#home div {
-  width: 80%;
-  height: 316px;
+.background{
+  width: 80vw;
+  height: 50vh;
   background-image: url(mainheader1.jpg);
   background-size: cover;
   margin: auto;
@@ -233,6 +232,175 @@ body {
 
   
 }
+#bird1 {
+  position: absolute;
+  width: 30px;
+  height: 28px;
+  background-image: url('b1.png'); /* Start with the first image */
+  background-size: cover;
+  animation: fly1 10s linear infinite, flap 0.5s steps(6) infinite;
+
+}
+
+#bird2 {
+  position: absolute;
+  width: 25px;
+  height: 23px;
+  background-image: url('b1.png'); /* Start with the first image */
+  background-size: cover;
+  animation: fly2 10s linear infinite, flap 0.5s steps(6) infinite;
+
+}
+
+#bird3 {
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  background-image: url('b1.png'); /* Start with the first image */
+  background-size: cover;
+  animation: fly3 10s linear infinite, flap 0.5s steps(6) infinite;
+
+}
+
+#bird4 {
+  position: absolute;
+  width: 27px;
+  height: 25px;
+  background-image: url('b1.png'); /* Start with the first image */
+  background-size: cover;
+  animation: fly4 10s linear infinite, flap 0.5s steps(6) infinite;
+
+}
+
+#bird5 {
+  position: absolute;
+  width: 23px;
+  height: 21px;
+  background-image: url('b1.png'); /* Start with the first image */
+  background-size: cover;
+  animation: fly5 10s linear infinite, flap 0.5s steps(6) infinite;
+
+}
+/* Keyframes for the bird's wing flapping effect (6 images) */
+@keyframes flap {
+  0% { background-image: url('b1.png'); }
+  16% { background-image: url('b3.png'); }
+  33% { background-image: url('b2.png'); }
+  50% { background-image: url('b4.png'); }
+  /* 66% { background-image: url('b5.png'); } */
+  83% { background-image: url('b6.png'); }
+  100% { background-image: url('b1.png'); }
+}
+
+/* Keyframes for the bird's circular flight path */
+
+@keyframes fly1 {
+  0% {
+      transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+      transform: translate(15vw, -50px) rotate(5deg);  /* Limited rotation between 0° to 5° */
+  }
+  40% {
+      transform: translate(35vw, -100px) rotate(10deg); /* Limited rotation between 5° to 10° */
+  }
+  60% {
+      transform: translate(55vw, -150px) rotate(15deg); /* Limited rotation between 10° to 15° */
+  }
+  80% {
+      transform: translate(75vw, -200px) rotate(10deg); /* Limited rotation back to 10° */
+  }
+  100% {
+      transform: translate(100vw, -250px) rotate(5deg);  /* Limited rotation between 0° to 5° */
+  }
+}
+
+@keyframes fly2{
+  0% {
+      transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+      transform: translate(17vw, -100px) rotate(5deg);  /* Limited rotation between 0° to 5° */
+  }
+  40% {
+      transform: translate(32vw, -150px) rotate(10deg); /* Limited rotation between 5° to 10° */
+  }
+  60% {
+      transform: translate(52vw, -200px) rotate(15deg); /* Limited rotation between 10° to 15° */
+  }
+  80% {
+      transform: translate(72vw, -250px) rotate(10deg); /* Limited rotation back to 10° */
+  }
+  100% {
+      transform: translate(100vw, -300px) rotate(5deg);  /* Limited rotation between 0° to 5° */
+  }
+}
+@keyframes fly3 {
+  0% {
+      transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+      transform: translate(10vw, -30px) rotate(5deg);  /* Limited rotation between 0° to 5° */
+  }
+  40% {
+      transform: translate(30vw, -100px) rotate(10deg); /* Limited rotation between 5° to 10° */
+  }
+  60% {
+      transform: translate(50vw, -150px) rotate(15deg); /* Limited rotation between 10° to 15° */
+  }
+  80% {
+      transform: translate(70vw, -200px) rotate(10deg); /* Limited rotation back to 10° */
+  }
+  100% {
+      transform: translate(100vw, -250px) rotate(5deg);  /* Limited rotation between 0° to 5° */
+  }
+}
+
+
+@keyframes fly5 {
+  0% {
+      transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+      transform: translate(11vw, -65px) rotate(5deg);  /* Limited rotation between 0° to 5° */
+  }
+  40% {
+      transform: translate(31vw, -125px) rotate(10deg); /* Limited rotation between 5° to 10° */
+  }
+  60% {
+      transform: translate(51vw, -175px) rotate(15deg); /* Limited rotation between 10° to 15° */
+  }
+  80% {
+      transform: translate(71vw, -225px) rotate(10deg); /* Limited rotation back to 10° */
+  }
+  100% {
+      transform: translate(100vw, -250px) rotate(5deg);  /* Limited rotation between 0° to 5° */
+  }
+}
+
+
+
+@keyframes fly4 {
+  0% {
+      transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+      transform: translate(13.5vw, -75px) rotate(5deg);  /* Limited rotation between 0° to 5° */
+  }
+  40% {
+      transform: translate(33.5vw, -125px) rotate(10deg); /* Limited rotation between 5° to 10° */
+  }
+  60% {
+      transform: translate(53.5vw, -175px) rotate(15deg); /* Limited rotation between 10° to 15° */
+  }
+  80% {
+      transform: translate(73.5vw, -225px) rotate(10deg); /* Limited rotation back to 10° */
+  }
+  100% {
+      transform: translate(100vw, -275px) rotate(5deg);  /* Limited rotation between 0° to 5° */
+  }
+}
+
 #home > div h1 {
     background: linear-gradient(115deg, #ffffff70, #ffe3fb82);
     border-radius: 30px;
@@ -490,16 +658,18 @@ body {
 }
 
 footer {
-  width: 100vw;
-  height: 780px;
+ 
 }
 
 footer {
+   
+  height: 1280px;
+  width: 100vw; !important
   position: absolute;
   content: "";
   background-image: url("foggfooter.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   z-index: 10;
 }
 
